@@ -44,7 +44,7 @@ int main() {
         i++;
     }
     
-    // Test des méthodes ajout Arbre
+    // Test méthode ajout Arbre
     Arbre* a3 = new Arbre(new Roue(2.5, 1.5), new Roue(1.5, 20), 2.0, -1);
     t.ajoutArbre(a3);
     std::cout << "Après ajout d'un arbre:" << std::endl;
@@ -59,5 +59,8 @@ int main() {
         courant = courant->getSuivant();
         i++;
     }
+
+
+
     return 0;
 }

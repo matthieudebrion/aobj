@@ -11,6 +11,13 @@ Arbre::Arbre(Roue* menante, Roue* menee, double N, int sens){
     this->suivant=nullptr;
 }
 
+Arbre::~Arbre() {
+    delete menante; 
+    menante = nullptr;
+    delete menee; 
+    menee = nullptr;
+}
+
 double Arbre::getN(){
     return N;
 }

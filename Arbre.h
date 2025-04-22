@@ -12,6 +12,7 @@ class Arbre{
     Arbre* suivant;  // Pointeur vers l'arbre suivant
     public :
     Arbre(Roue * r1, Roue * r2, double,  int);
+    ~Arbre(); // Déclaration du destructeur
     void setMenee(Roue * r1);
     void setMenante(Roue * r2);
     Roue* getMenee();
